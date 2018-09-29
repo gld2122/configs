@@ -1,13 +1,14 @@
 syntax on
-map <F6> :setlocal spell! spelllang=en_us<CR>
-set relativenumber
 
+set relativenumber
 set tw=80
 set textwidth=80
-
 set ruler
-command Xel execute "w <bar> !xelatex %"
+set nocompatible
+
 au BufRead,BufNewFile *.md set filetype=markdown
+
+filetype plugin on
 
 """ From LUKE SMITH
 """BASIC TOOLS
@@ -16,15 +17,14 @@ inoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
+map <F6> :setlocal spell! spelllang=en_us<CR>
+
 "For normal mode when in terminals (in X I have caps mapped to esc, this
 "replaces it when I don't have X)
 inoremap jw <Esc>
 inoremap wj <Esc>
 inoremap <C-l> <Tab><Tab>
 """END
-
-set nocompatible
-filetype plugin on
 
 """LATEX
 autocmd FileType tex inoremap ;fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
@@ -62,6 +62,7 @@ autocmd FileType tex inoremap ;bt {\blindtext}
 autocmd FileType tex inoremap ;nu $\varnothing$
 autocmd FileType tex inoremap ;col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 autocmd FileType tex inoremap ;vrb \begin{verbatim}<Enter><Enter>\end{verbatim}<Enter><Enter><++><Esc>3k
+command Xl execute "w <bar> !xelatex %"
 """END
 
 """Logical Symbols
@@ -129,9 +130,9 @@ autocmd FileType html inoremap ;a <a<Space>href=""><++></a><Space><++><Esc>F"i
 autocmd FileType html inoremap ;ul <ul><Enter><li></li><Enter></ul><Enter><Enter><++><Esc>03kf<i
 autocmd FileType html inoremap ;li <Esc>o<li></li><Esc>F>a
 autocmd FileType html inoremap ;ol <ol><Enter><li></li><Enter></ol><Enter><Enter><++><Esc>03kf<i
-
 """END
 
+"""MARKDOWN
 autocmd Filetype markdown inoremap ;b ****<Space><++><Esc>F*hi
 autocmd Filetype markdown inoremap ;s ~~~~<Space><++><Esc>F~hi
 autocmd Filetype markdown inoremap ;e **<Space><++><Esc>F*i
@@ -142,8 +143,8 @@ autocmd Filetype markdown inoremap ;1 #<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ;2 ##<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ;3 ###<Space><Enter><++><Esc>kA
 autocmd Filetype markdown inoremap ;l --------<Enter>
+"""END
 
+"""JAVA
 autocmd FileType java inoremap ;pln System.out.println()<Space><++><Esc>T(i
-
-
-syntax on
+"""END
