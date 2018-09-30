@@ -63,6 +63,7 @@ autocmd FileType tex inoremap ;nu $\varnothing$
 autocmd FileType tex inoremap ;col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 autocmd FileType tex inoremap ;vrb \begin{verbatim}<Enter><Enter>\end{verbatim}<Enter><Enter><++><Esc>3k
 command Xl execute "w <bar> !xelatex %"
+autocmd VimLeave *.tex ! ~/Configs/Scripts/txclr %
 """END
 
 """Logical Symbols

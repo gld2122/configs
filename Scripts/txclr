@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Clears the build files of a LaTeX/XeLaTeX build.
+# I have vim run this file whenever I exit a .tex file.
+
+[[ "$1" == *.tex ]] || exit
+
+file=$(greadlink -f "$1")
+dir=$(dirname "$file")
+base="${file%.*}"
+
+find -E "$dir" -maxdepth 1 -type f -regex "^$base\.(4tc|xref|tmp|pyc|pyo|fls|vrb|fdb_latexmk|bak|swp|aux|log|lof|nav|synctex\.gz|out|snm|toc|bcf|blg|bbl)" -delete
