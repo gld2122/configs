@@ -1,3 +1,5 @@
 # configs
 
-Most credit to lukesmithxyz. More to come
+cf. lukesmithxyz.
+
+This repo needs to be placed in HOME directory.
