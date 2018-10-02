@@ -11,6 +11,7 @@ alias cunix='ssh gld2122@cunix.cc.columbia.edu'
 alias codio='ssh codio@forwarding.codio.com -p 50325'
 alias ranger='~/Applications/ranger-1.8.1/ranger.py'
 alias rss='~/Applications/newsboat-2.13/newsboat'
+alias mutt='~/Applications/mutt/mutt'
 set -o vi
 
 export MAGICK_HOME="$HOME/Applications/ImageMagick-7.0.7"
