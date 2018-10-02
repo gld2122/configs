@@ -4,7 +4,10 @@ set relativenumber
 set tw=80
 set textwidth=80
 
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 
 set ruler
 set nocompatible
