@@ -154,4 +154,5 @@ autocmd Filetype markdown inoremap ;l --------<Enter>
 
 """JAVA
 autocmd FileType java inoremap ;pln System.out.println()<Space><++><Esc>T(i
+command Jvc execute "w <bar> !javac %"
 """END
