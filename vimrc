@@ -4,6 +4,7 @@ set relativenumber
 set tw=80
 set textwidth=80
 
+"TABS CONVERTED TO TWO SPACES
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
