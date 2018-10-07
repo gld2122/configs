@@ -1,6 +1,6 @@
 # !/bin/bash
 
-ln -fs ~/Configs/vimrc ~/.vimrc 
-ln -fs ~/Configs/muttrc ~/.muttrc
-ln -fs ~/Configs/bashrc ~/.bashrc
-ln -fs ~/Configs/ranger ~/.config/ranger/rc.conf
+ln -fs ~/configs/vimrc ~/.vimrc 
+ln -fs ~/configs/muttrc ~/.muttrc
+ln -fs ~/configs/bashrc ~/.bashrc
+ln -fs ~/configs/ranger ~/.config/ranger/rc.conf
