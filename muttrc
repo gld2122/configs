@@ -8,8 +8,9 @@ set smtp_authenticators = 'gssapi:login'
 
 source "~/.mutt/account.columbia"
 
-# macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/account.columbia<enter><change-folder>!<enter>'
-# macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/account.personal<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/account.columbia<enter><change-folder>!<enter>'
+macro index <f5> '<sync-mailbox><enter-command>source ~/.mutt/account.personal<enter><change-folder>!<enter>'
+macro index <f6> '<sync-mailbox><enter-command>source ~/.mutt/account.ae<enter><change-folder>!<enter>'
 
 bind editor <space> noop
 bind index G last-entry
