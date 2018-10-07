@@ -1,4 +1,5 @@
 # !/bin/bash
+# WARNING: THIS WILL OVERWRITE YOUR EXISTING CONFIGS
 
 ln -fs ~/configs/vimrc ~/.vimrc 
 ln -fs ~/configs/muttrc ~/.muttrc
