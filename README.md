@@ -2,4 +2,5 @@
 
 cf. lukesmithxyz.
 
-This repo needs to be placed in HOME directory.
+Place in HOME directory. Run setup.sh to create symbolic links to various config
+files.
