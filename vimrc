@@ -68,7 +68,7 @@ autocmd FileType tex inoremap ;up <Esc>/usepackage<Enter>o\usepackage{}<Esc>i
 autocmd FileType tex nnoremap ;up /usepackage<Enter>o\usepackage{}<Esc>i
 autocmd FileType tex inoremap ;tt \texttt{}<Space><++><Esc>T{i
 autocmd FileType tex inoremap ;bt {\blindtext}
-autocmd FileType tex inoremap ;nu $\varnothing$
+autocmd FileType tex inoremap ;nu \varnothing
 autocmd FileType tex inoremap ;col \begin{columns}[T]<Enter>\begin{column}{.5\textwidth}<Enter><Enter>\end{column}<Enter>\begin{column}{.5\textwidth}<Enter><++><Enter>\end{column}<Enter>\end{columns}<Esc>5kA
 autocmd FileType tex inoremap ;vrb \begin{verbatim}<Enter><Enter>\end{verbatim}<Enter><Enter><++><Esc>3k
 command Xl execute "w <bar> !xelatex %"
