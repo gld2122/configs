@@ -26,7 +26,7 @@ map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map & d/\.<CR> 
-map gi{ {jgq}
+map gi{ {jgq}k$
 
 "For normal mode when in terminals (in X I have caps mapped to esc, this
 "replaces it when I don't have X)
