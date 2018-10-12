@@ -1,14 +1,21 @@
+"WHO DOESN'T WANT THIS ON
 syntax on
+"END
 
-set relativenumber
+"HYBRID NUMBERING
+set number relativenumber
+
+"80-CHAR MAX LINE
 set tw=80
 set textwidth=80
+"END
 
 "TABS CONVERTED TO TWO SPACES
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+"END
 
 set ruler
 set nocompatible
@@ -33,7 +40,7 @@ map gi{ {jgq}k$
 inoremap jw <Esc>
 inoremap wj <Esc>
 inoremap <C-l> <Tab><Tab>
-"""END
+"END
 
 """LATEX
 autocmd FileType tex inoremap ;fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
@@ -92,6 +99,7 @@ autocmd FileType tex inoremap ;dia	{\Diamond}
 autocmd FileType tex inoremap ;box	{\Box}
 """END
 
+"SMALL CAPS CASE MARKING
 autocmd Filetype tex inoremap ;nom {\textsc{nom}}
 autocmd FileType tex inoremap ;acc {\textsc{acc}}
 autocmd FileType tex inoremap ;dat {\textsc{dat}}
@@ -100,7 +108,7 @@ autocmd FileType tex inoremap ;abl {\textsc{abl}}
 autocmd FileType tex inoremap ;voc {\textsc{voc}}
 autocmd FileType tex inoremap ;loc {\textsc{loc}}
 autocmd Filetype tex inoremap ;inst {\textsc{inst}}
-"autocmd FileType tex inoremap ;
+"""END
 
 """IPA
 autocmd FileType tex inoremap ;tipa \textipa{}<Space><++><Esc>T{i
