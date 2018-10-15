@@ -8,7 +8,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias cunix='ssh gld2122@cunix.cc.columbia.edu'
-alias codio='ssh codio@forwarding.codio.com -p 50325'
+alias codio='ssh codio@forwarding.codio.com -p 50341'
 alias rss='~/Applications/newsboat-2.13/newsboat'
 
 set -o vi

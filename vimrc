@@ -2,8 +2,13 @@
 syntax on
 "END
 
+"PLUGINS
+filetype plugin on
+"END
+
 "HYBRID NUMBERING
 set number relativenumber
+"END
 
 "80-CHAR MAX LINE
 set tw=80
@@ -20,20 +25,22 @@ set expandtab
 set ruler
 set nocompatible
 
-au BufRead,BufNewFile *.md set filetype=markdown
-
-filetype plugin on
-
-""" From LUKE SMITH
-"""BASIC TOOLS
-"Navigating with guides
+""" From LUKE SMITH BASIC TOOLS
+"""Navigating with guides
 inoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
 map <F6> :setlocal spell! spelllang=en_us<CR>
+"END
+
+"DELETE TO END OF SENTENCE MARKER
 map & d/\.<CR> 
+"END
+
+"FORMAT PARAGRAPH TO 80-CHAR FROM INSIDE PARAGRAPH
 map gi{ {jgq}k$
+"END
 
 "For normal mode when in terminals (in X I have caps mapped to esc, this
 "replaces it when I don't have X)
@@ -151,6 +158,8 @@ autocmd FileType html inoremap ;ol <ol><Enter><li></li><Enter></ol><Enter><Enter
 """END
 
 """MARKDOWN
+au BufRead,BufNewFile *.md set filetype=markdown
+
 autocmd Filetype markdown inoremap ;b ****<Space><++><Esc>F*hi
 autocmd Filetype markdown inoremap ;s ~~~~<Space><++><Esc>F~hi
 autocmd Filetype markdown inoremap ;e **<Space><++><Esc>F*i
