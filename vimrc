@@ -1,4 +1,4 @@
-"WHO DOESN'T WANT THIS ON
+"BECAUSE WHY NOT
 syntax on
 "END
 
