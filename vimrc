@@ -175,4 +175,6 @@ autocmd Filetype markdown inoremap ;l --------<Enter>
 """JAVA
 autocmd FileType java inoremap ;pln System.out.println()<Space><++><Esc>T(i
 command Jvc execute "w <bar> !javac %"
+autocmd FileType java inoremap ;cls public<Space>class<Space>{<CR><CR>}<Esc>
+autocmd FileType java inoremap ;main public<Space>static<Space>void<Space>main(String[]<Space>args)<Space>{<CR><CR>}<Esc>
 """END

@@ -2,7 +2,7 @@ alias clr='clear'
 alias e='exit'
 alias o='open'
 alias ls='ls -GFh'
-alias slide='killall bgslide ; nohup go run bgslide &'
+alias slide='killall bgslide; nohup go run bgslide &'
 alias gitpushmit='git commit -a ; git push'
 
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
