@@ -9,4 +9,4 @@ file=$(greadlink -f "$1")
 dir=$(dirname "$file")
 base="${file%.*}"
 
-find -E "$dir" -maxdepth 1 -type f -regex "^$base\.(4tc|xref|tmp|pyc|pyo|fls|vrb|fdb_latexmk|bak|swp|aux|log|lof|nav|run\.xml|synctex\.gz|out|snm|toc|bcf|blg|bbl)" -delete
+find -E "$dir" -maxdepth 1 -type f -regex "^$base\.(4tc|xref|tex\.aux|tmp|pyc|pyo|fls|vrb|fdb_latexmk|bak|swp|aux|log|lof|nav|run\.xml|synctex\.gz|out|snm|toc|bcf|blg|bbl)" -delete
