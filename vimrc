@@ -34,8 +34,8 @@ inoremap ;gui <++>
 map <F6> :setlocal spell! spelllang=en_us<CR>
 "END
 
-"DELETE TO END OF SENTENCE MARKER
-map & d/\.<CR> 
+"JUMP TO END OF SENTENCE MARKER
+map & /\.<CR> 
 "END
 
 "FORMAT PARAGRAPH TO 80-CHAR FROM INSIDE PARAGRAPH
@@ -88,13 +88,13 @@ autocmd FileType tex inoremap ;vrb \begin{verbatim}<Enter><Enter>\end{verbatim}<
 
 "QUICK COMPILE
 command Xl execute "w <bar> !xelatex %"
+command Bb execute "!~/Configs/Scripts/run-biber %"
 
 "CLEAR BUILD FILES
 autocmd VimLeave *.tex ! ~/Configs/Scripts/txclr %
 
 "FORCE READING AS TEX
 au BufRead,BufNewFile *.tex set filetype=tex
-"""END
 
 """Logical Symbols
 autocmd FileType tex inoremap ;m $$<Space><++><Esc>2T$i
@@ -181,7 +181,7 @@ autocmd Filetype markdown inoremap ;l --------<Enter>
 
 """JAVA
 autocmd FileType java inoremap ;pln System.out.println()<Space><++><Esc>T(i
-command Jvc execute "w <bar> !javac %"
 autocmd FileType java inoremap ;cls public<Space>class<Space>{<CR><CR>}<Esc>
 autocmd FileType java inoremap ;main public<Space>static<Space>void<Space>main(String[]<Space>args)<Space>{<CR><CR>}<Esc>
+command Jvc execute "w <bar> !javac %"
 """END
