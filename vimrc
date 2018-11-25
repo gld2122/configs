@@ -31,7 +31,7 @@ inoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
-map <F6> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_uk<CR>
 "END
 
 "JUMP TO END OF SENTENCE MARKER

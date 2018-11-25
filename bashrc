@@ -3,14 +3,17 @@ alias e='exit'
 alias o='open'
 alias ls='ls -GFh'
 alias slide='~/go/src/bgslide/bgslide.sh'
-alias gitpushmit='git commit -a ; git push'
+alias pushmit='git commit -a; git push'
+
+alias cacaview='/usr/local/bin/cacaview'
+alias img2txt='/usr/local/bin/img2txt'
 
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias cunix='ssh gld2122@cunix.cc.columbia.edu'
-alias codio='ssh codio@forwarding.codio.com -p 50341'
+alias codio='ssh codio@forwarding.codio.com -p 50373'
 alias rss='~/Applications/newsboat-2.13/newsboat'
 
 set -o vi
