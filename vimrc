@@ -1,5 +1,6 @@
 "BECAUSE WHY NOT
 syntax on
+filetype plugin indent on
 "END
 
 "PLUGINS
@@ -31,7 +32,7 @@ inoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
-map <F6> :setlocal spell! spelllang=en_uk<CR>
+map <F6> :setlocal spell! spelllang=en<CR>
 "END
 
 "JUMP TO END OF SENTENCE MARKER
@@ -50,7 +51,7 @@ inoremap <C-l> <Tab><Tab>
 "END
 
 """LATEX
-autocmd FileType tex inoremap ;fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
+autocmd FileType tex inoremap ;fr \begin{frame}{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>2?}<Enter>i
 autocmd FileType tex inoremap ;fi \begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 autocmd FileType tex inoremap ;exe \begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
 autocmd FileType tex inoremap ;em \emph{}<Space><++><Esc>T{i
@@ -88,7 +89,7 @@ autocmd FileType tex inoremap ;vrb \begin{verbatim}<Enter><Enter>\end{verbatim}<
 
 "QUICK COMPILE
 command Xl execute "w <bar> !xelatex %"
-command Bb execute "!~/Configs/Scripts/run-biber %"
+command Bb execute "w <bar> !~/Configs/Scripts/run-biber %"
 
 "CLEAR BUILD FILES
 autocmd VimLeave *.tex ! ~/Configs/Scripts/txclr %
