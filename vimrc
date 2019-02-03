@@ -16,13 +16,6 @@ set tw=80
 set textwidth=80
 "END
 
-"TABS CONVERTED TO TWO SPACES
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-"END
-
 set ruler
 set nocompatible
 
@@ -36,7 +29,7 @@ map <F6> :setlocal spell! spelllang=en<CR>
 "END
 
 "JUMP TO END OF SENTENCE MARKER
-map & /\.<CR> 
+map & /\.<CR>
 "END
 
 "FORMAT PARAGRAPH TO 80-CHAR FROM INSIDE PARAGRAPH
