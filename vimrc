@@ -1,4 +1,4 @@
-"BECAUSE WHY NOT
+"SYNTAX AND INDENTATION
 syntax on
 filetype plugin indent on
 "END
@@ -16,10 +16,11 @@ set tw=80
 set textwidth=80
 "END
 "
+"2-SPACE TABS
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-
+"END
 
 set ruler
 set nocompatible
