@@ -179,3 +179,7 @@ autocmd FileType java inoremap ;cls public<Space>class<Space>{<CR><CR>}<Esc>
 autocmd FileType java inoremap ;main public<Space>static<Space>void<Space>main(String[]<Space>args)<Space>{<CR><CR>}<Esc>
 command Jvc execute "w <bar> !javac %"
 """END
+
+"""C
+autocmd FileType c inoremap ;pf printf()<Space><++><Esc>T(i
+"""END
