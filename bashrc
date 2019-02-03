@@ -14,6 +14,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias cunix='ssh gld2122@cunix.cc.columbia.edu'
+alias clac='ssh gld2122@clac.cs.columbia.edu'
 alias codio='ssh codio@forwarding.codio.com -p 50373'
 
 set -o vi

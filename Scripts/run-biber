@@ -5,4 +5,6 @@
 file=$(greadlink -f "$1")
 base="${file%.*}"
 
+xelatex "$file"
 biber "$base"
+xelatex "$file"
