@@ -5,6 +5,7 @@ alias ls='ls -GFh'
 alias slide='~/go/src/bgslide/bgslide.sh'
 alias pushmit='git commit -a; git push'
 
+
 alias cacaview='/usr/local/bin/cacaview'
 alias img2txt='/usr/local/bin/img2txt'
 
@@ -14,7 +15,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias cunix='ssh gld2122@cunix.cc.columbia.edu'
 alias codio='ssh codio@forwarding.codio.com -p 50373'
-alias rss='~/Applications/newsboat-2.13/newsboat'
 
 set -o vi
 
