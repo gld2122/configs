@@ -5,6 +5,7 @@ alias ls='ls -GFh'
 alias slide='~/go/src/bgslide/bgslide.sh'
 alias pushmit='git commit -a; git push'
 
+
 alias cacaview='/usr/local/bin/cacaview'
 alias img2txt='/usr/local/bin/img2txt'
 
