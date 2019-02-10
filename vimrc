@@ -15,11 +15,15 @@ set number relativenumber
 set tw=80
 set textwidth=80
 "END
-"
+
 "2-SPACE TABS
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+"END
+
+"BACKSPACE PAST START OF INSERT
+set backspace=indent,eol,start
 "END
 
 set ruler
