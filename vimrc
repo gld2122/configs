@@ -191,5 +191,6 @@ command Jvc execute "w <bar> !javac %"
 """END
 
 """C
-autocmd FileType c inoremap ;pf printf()<Space><++><Esc>T(i
+autocmd FileType c inoremap ;pf printf()<++><Esc>T(i
+autocmd FileType c inoremap ;inc #include<Space><><++><Esc>T<hT<i
 """END
