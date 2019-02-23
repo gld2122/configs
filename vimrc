@@ -35,7 +35,7 @@ inoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 vnoremap <Tab><Tab> <Esc>/<++><Enter>"_c4l
 map <Tab><Tab> <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
-map <F6> :setlocal spell! spelllang=en<CR>
+map <F6> :setlocal spell! spelllang=en_gb<CR>
 "END
 
 "JUMP TO END OF SENTENCE MARKER
@@ -132,6 +132,7 @@ autocmd Filetype tex inoremap ;inst {\textsc{inst}}
 autocmd FileType tex inoremap ;tipa \textipa{}<Space><++><Esc>T{i
 autocmd FileType tex inoremap ;ae {\ae}
 autocmd FileType tex inoremap ;A {\textscripta}
+autocmd FileType tex inoremap ;N {\textscn}
 autocmd FileType tex inoremap ;dh {\dh}
 autocmd FileType tex inoremap ;yogh {\textyogh}
 autocmd FileType tex inoremap ;j {\textdyoghlig}
