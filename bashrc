@@ -14,10 +14,6 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-alias cunix='ssh gld2122@cunix.cc.columbia.edu'
-alias clac='ssh gld2122@clac.cs.columbia.edu'
-alias codio='ssh codio@forwarding.codio.com -p 50373'
-
 set -o vi
 
 export MAGICK_HOME="$HOME/Applications/ImageMagick-7.0.7"
