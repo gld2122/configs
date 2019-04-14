@@ -12,8 +12,8 @@ set number relativenumber
 "END
 
 "80-CHAR MAX LINE
-set tw=80
-set textwidth=80
+autocmd FileType c set tw=80
+autocmd FileType c set textwidth=80
 "END
 
 "2-SPACE TABS
