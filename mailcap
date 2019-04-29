@@ -1,5 +1,5 @@
 text/plain; vim %s ;
-text/html; open -a "/Applications/Google Chrome.app" %s ;
+text/html; open -a "/Applications/Firefox.app" %s ;
 application/pdf; open -a "/Applications/Preview.app" %s ;
 image/jpg; open -a "/Applications/Preview.app" %s ;
 image/jpeg; open -a "/Applications/Preview.app" %s ;

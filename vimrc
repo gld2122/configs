@@ -57,12 +57,17 @@ inoremap <C-l> <Tab><Tab>
 autocmd FileType tex inoremap ;fr \begin{frame}{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>2?}<Enter>i
 autocmd FileType tex inoremap ;fi \begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
 autocmd FileType tex inoremap ;exe \begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
-autocmd FileType tex inoremap ;em \emph{}<Space><++><Esc>T{i
-autocmd FileType tex inoremap ;bf \textbf{}<Space><++><Esc>T{i
-autocmd FileType tex inoremap ;it \textit{}<Space><++><Esc>T{i
-autocmd FileType tex inoremap ;rm \textrm{}<Space><++><Esc>T{i
-autocmd FileType tex inoremap ;ct \textcite{}<Space><++><Esc>T{i
-autocmd FileType tex inoremap ;cp \parencite{}<Space><++><Esc>T{i
+
+"TEXT STYLES
+autocmd FileType tex inoremap ;em \emph{}<++><Esc>T{i
+autocmd FileType tex inoremap ;bf \textbf{}<++><Esc>T{i
+autocmd FileType tex inoremap ;it \textit{}<++><Esc>T{i
+autocmd FileType tex inoremap ;rm \textrm{}<++><Esc>T{i
+
+"CITATIONS
+autocmd FileType tex inoremap ;ct \textcite{}<++><Esc>T{i
+autocmd FileType tex inoremap ;cp \parencite{}<++><Esc>T{i
+
 autocmd FileType tex inoremap ;glos {\gll<Space><++><Space>\\<Enter><++><Space>\\<Enter>\trans{``<++>''}}<Esc>2k2bcw
 autocmd FileType tex inoremap ;x \begin{xlist}<Enter>\ex<Space><Enter>\end{xlist}<Esc>kA<Space>
 autocmd FileType tex inoremap ;ol \begin{enumerate}<Enter><Enter>\end{enumerate}<Enter><Enter><++><Esc>3kA\item<Space>
