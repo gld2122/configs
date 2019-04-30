@@ -11,9 +11,10 @@ filetype plugin on
 set number relativenumber
 "END
 
-"80-CHAR MAX LINE
-autocmd FileType c set tw=80
-autocmd FileType c set textwidth=80
+"79-CHAR MAX LINE
+set tw=79
+au FileType * set fo+=a
+set wm=0
 "END
 
 "2-SPACE TABS
@@ -43,7 +44,7 @@ map & /\.<CR>
 "END
 
 "FORMAT PARAGRAPH TO 80-CHAR FROM INSIDE PARAGRAPH
-map gi{ {jgq}k$
+map gi{ vipgq
 "END
 
 "For normal mode when in terminals (in X I have caps mapped to esc, this
