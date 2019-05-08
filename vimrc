@@ -13,7 +13,6 @@ set number relativenumber
 
 "79-CHAR MAX LINE
 set tw=79
-au FileType * set fo+=a
 set wm=0
 "END
 
