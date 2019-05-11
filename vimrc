@@ -13,7 +13,6 @@ set number relativenumber
 
 "79-CHAR MAX LINE
 set tw=79
-au FileType * set fo+=a
 set wm=0
 "END
 
@@ -56,7 +55,7 @@ inoremap <C-l> <Tab><Tab>
 
 """LATEX
 autocmd FileType tex inoremap ;fr \begin{frame}{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>2?}<Enter>i
-autocmd FileType tex inoremap ;fi \begin{fitch}<Enter><Enter>\end{fitch}<Enter><Enter><++><Esc>3kA
+autocmd FileType tex inoremap ;fig \begin{figure}<Enter><Enter>\end{figure}<Enter><Enter><++><Esc>3kA
 autocmd FileType tex inoremap ;exe \begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA
 
 "TEXT STYLES
